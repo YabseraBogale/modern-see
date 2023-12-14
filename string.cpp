@@ -2,7 +2,6 @@
 
 int main(){
     std::string s="Hello World";
-    
-    std::cout<<s<<std::endl;
+    std::cout<<s.find("h")<<std::endl;
     return 0;
 }
