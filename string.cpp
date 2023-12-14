@@ -1,7 +1,8 @@
 #include<iostream>
 
 int main(){
-    std::string s="Hello World";
-    std::cout<<s.find("h")<<std::endl;
+    std::string s="";
+    std::getline(std::cin,s);
+    std::cout<<s<<std::endl;
     return 0;
 }
