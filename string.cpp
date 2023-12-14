@@ -5,6 +5,5 @@ int main(){
     std::getline(std::cin,s);
     size_t t=s.find("j");
     std::cout<<t<<std::endl;
-    
-    return 0;
+   return 0;
 }
