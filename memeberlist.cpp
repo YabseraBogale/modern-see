@@ -15,7 +15,7 @@ class Shape{
 int main(){
     Shape rec{12,13};
     Shape tri=rec;
-    rec.SetHieght(4.0)
+    rec.SetHieght(4.0);
     std::cout<<"rec x: "<<rec.GetWidth()<<" y: "<<rec.GetHieght()<<std::endl;
     std::cout<<"tri x: "<<tri.GetWidth()<<" y: "<<tri.GetHieght()<<std::endl;
     return 0;
