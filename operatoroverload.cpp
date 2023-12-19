@@ -15,7 +15,10 @@ class WoodAdder{
 int main(){
 
     WoodAdder w;
-    ++w;
+    for(int i=0;i<5;i++){
+        ++w;
+        std::cout<<w.GetWoodNumber()<<"\n";
+    }
     std::cout<<w.GetWoodNumber()<<"\n";
 
 
