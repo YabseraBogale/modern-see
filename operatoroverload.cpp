@@ -2,24 +2,28 @@
 class WoodAdder{
         int wood;
         public:
-            WoodAdder(){
-                wood=0;
-            }
             WoodAdder& operator++(){
-                ++wood;
+                wood++;
                 return *this;
             }
             int GetWoodNumber(){    return wood;}
+            WoodAdder& operator+=(const WoodAdder& rh){
+                this->wood+=rh.wood;
+                return *this;
+            }
+            friend WoodAdder operator+(const WoodAdder& rh1,WoodAdder rh2){
+                rh2+=rh1;
+                return rh2;
+            }
 };
 
 int main(){
 
-    WoodAdder w;
-    for(int i=0;i<5;i++){
-        ++w;
-        std::cout<<w.GetWoodNumber()<<"\n";
-    }
-    std::cout<<w.GetWoodNumber()<<"\n";
+    WoodAdder w1,w2,w3;
+    ++w1;
+    ++w2;
+    w3=w2+w1;
+    std::cout<<w3.GetWoodNumber()<<"\n";
 
 
     return 0;
