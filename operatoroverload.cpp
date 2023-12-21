@@ -18,7 +18,6 @@ class WoodAdder{
 };
 
 int main(){
-
     WoodAdder w1,w2,w3;
     ++w1;
     ++w2;
