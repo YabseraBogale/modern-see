@@ -2,7 +2,10 @@
 #include<stack>
 #include<string>
 int main(){
-    // why doesn't this work?
-    stack<std::string> word="ss";
+
+    std::stack<std::string> word;
+    word.push("hello world");   
+    std::stack<int>numbers;
+    numbers.push(5);
     return 0;
 }
